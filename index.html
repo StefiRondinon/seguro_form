@@ -10,7 +10,7 @@
 </head>
 
 <body>
-    <form action="">
+    <form>
         <h2>CONTACTO</h2>
         <label>Nombre</label>
         <input type="text">
@@ -18,36 +18,34 @@
         <input type="text">
         <label>DNI</label>
         <input type="text">
-        <label">Email</label>
-            <input type="text">
-            <label>Teléfono</label>
-            <input type="text">
-           
+        <label>Email</label>
+        <input type="text">
+        <label>Teléfono</label>
+        <input type="text">
 
-
-            <div>
+        <!-- <div class="tipoDeSeguro">
                 <label for="seguro">Tipo de Seguro:</label>
 
                 <select name="tipodeseguro" id="tipodeseguro">
-                    <option value="basico" onchange=mostrarPrecio(1)>Básico</option>
-                    <option value="intermedio" onchange=mostrarPrecio(2)>intermedio</option>
-                    <option value="premium" onclick=mostrarPrecio(3)>Primium</option>
+                    <option value="basico" onclick="mostrarPrecio('basico')">Básico</option>
+                    <option value="intermedio" onclick="mostrarPrecio('intermedio')">Intermedio</option>
+                    <option value="premium" onclick="mostrarPrecio('premium')">Premium</option>
                 </select>
-            </div>
-            <!--     
-            <div class="container_options">
-                <label for="basico">Básico</label>
-                <input type="radio" id="basico" value="basico" onclick="desplegarOpcion(B)">
-
-                <label for="intermedio">intermedio</label>
-                <input type="radio" id="intermedio" value="intermedio" onclick="precioI">
-
-                <label for="premium">Premium</label>
-                <input type="radio" id="premium" value="premium" onclick="precioP">
             </div> -->
-
-            <input type="button" value="ENVIAR" id="button">
+        <div class="container_grid">
+            <input class="optionSeguros" type="button" value="Básico" onclick="mostrarPrecio('basico')">
+            <p class="precio">$500</p>
+            <input class="optionSeguros" type="button" value="Intermedio" onclick="mostrarPrecio('intermedio')">
+            <p class="precio">$1000</p>
+            <input class="optionSeguros" type="button" value="Premium" onclick="mostrarPrecio('premium')">
+            <p class="precio">$1500</p>
+        </div>
+        <input type="button" value="ENVIAR" id="button">
     </form>
+
+
+
+    <script src="main.js"></script>
 </body>
 
 </html>
