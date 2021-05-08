@@ -10,28 +10,19 @@
 </head>
 
 <body>
-    <form>
+    <form autocomplete="off">
         <h2>CONTACTO</h2>
         <label>Nombre</label>
-        <input type="text">
+        <input class="respuestas-form" type="text" required>
         <label>Apellido</label>
-        <input type="text">
+        <input class="respuestas-form" type="text" required>
         <label>DNI</label>
-        <input type="text">
-        <label>Email</label>
-        <input type="text">
-        <label>Teléfono</label>
-        <input type="text">
+        <input class="respuestas-form" type="number" required>
+        <label> Email</label>
+        <input class="respuestas-form" type="email" required>
+        <label> Teléfono</label>
+        <input class="respuestas-form" type="tel" required>
 
-        <!-- <div class="tipoDeSeguro">
-                <label for="seguro">Tipo de Seguro:</label>
-
-                <select name="tipodeseguro" id="tipodeseguro">
-                    <option value="basico" onclick="mostrarPrecio('basico')">Básico</option>
-                    <option value="intermedio" onclick="mostrarPrecio('intermedio')">Intermedio</option>
-                    <option value="premium" onclick="mostrarPrecio('premium')">Premium</option>
-                </select>
-            </div> -->
         <div class="container_grid">
             <input class="optionSeguros" type="button" value="Básico" onclick="mostrarPrecio('basico')">
             <p class="precio">$500</p>
@@ -40,7 +31,7 @@
             <input class="optionSeguros" type="button" value="Premium" onclick="mostrarPrecio('premium')">
             <p class="precio">$1500</p>
         </div>
-        <input type="button" value="ENVIAR" id="button">
+        <input class="enviar" type="submit" value="ENVIAR">
     </form>
 
 

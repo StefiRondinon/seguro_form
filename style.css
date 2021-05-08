@@ -3,36 +3,58 @@ body {
     background-size: 100vw 100vh;
     background-attachment: fixed;
     margin: 0;
-    font-family:Verdana, Geneva, Tahoma, sans-serif;
     color: #fff;
 }
 
 
 form {
-    width: 450px;
-    margin: auto;
-    background: rgba(0,0,0,0.7);
-    padding: 10px 20px;
     box-sizing: border-box;
+    width: 500px;
+    margin: auto;
+    background-color: rgba(0, 0, 0, 0.542);
     margin-top: 20px;
     border-radius: 20px;
+    padding: 3%;
 }
 
 h2 {
     text-align: center;
     margin: 0;
-    font-size: 30px;
-    margin-bottom: 20px;
+    font-size: 28px;
+    margin-bottom: px;
+}
+
+label {
+    font-size: 15px;
 }
 
 input {
     width: 100%;
-    margin-bottom: 20px;
-    padding: 6px;
+    height: 30px;
+    margin-top: 3px;
+    margin-bottom: 9px;
+    padding: 0px;
     box-sizing: border-box;
     font-size: 20px;
+    border: 3px solid #000;
 }
 
+.enviar {
+    margin-top: 15px;
+    background: linear-gradient(rgba(255, 255, 255, 0.693), rgba(36, 35, 35, 0.796));
+    font-size: 15px;
+    font-weight: 800;
+    color: #fff;
+
+}
+
+.respuestas-form {
+    background: linear-gradient(rgba(255, 255, 255, 0.693), rgba(36, 35, 35, 0.796));
+    color: #fff;
+    font-size: 15px;
+    font-weight: ;
+
+}
 
 .optionSeguros {
     margin-top: 20px;
@@ -42,6 +64,10 @@ input {
     border-radius: 10px;
     border: 1px solid #000;
     transition: background 1s;
+    background: linear-gradient(rgba(255, 255, 255, 0.693), rgba(36, 35, 35, 0.796));
+    color: #000;
+    font-weight: 600;
+
 }
 
 .optionSeguros:hover {
@@ -52,6 +78,7 @@ input {
 .container_grid {
     display: grid;
     grid-template-columns: repeat(2, 100px);
+    grid-template-rows: repeat(3, 45px);
     justify-content: center;
     align-items: center;
 }
